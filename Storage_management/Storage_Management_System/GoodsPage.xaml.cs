@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Collections.ObjectModel;
 
+
 namespace Storage_Management_System
 {
 
@@ -37,11 +38,11 @@ namespace Storage_Management_System
                     this.recordings.Add(new Recording()
                     {
 
-                    Id = iteam.Id,
-                    Name = iteam.Name,
-                    Amount = iteam.Amount,
-                    Price = iteam.Price,
-                    Supplier = iteam.Supplier
+                        Id = iteam.Id,
+                        Name = iteam.Name,
+                        Amount = iteam.Amount,
+                        Price = iteam.Price,
+                        Supplier = iteam.Supplier
 
 
                     });
@@ -62,19 +63,43 @@ namespace Storage_Management_System
 
             public string Supplier { get; set; }
 
-            
+
 
         }
 
+
+
        
-            private void g_delete(object sender, RoutedEventArgs e)
+
+        public void delete(string Name)
         {
-           
+            
+            using (var conn = DatabaseConnection.GetDbConnectionone())
+            {
+                conn.Execute("DELETE FROM Goods Where Name = ?", Name);
+
+            }
+
+
         }
 
         private void g_add(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(StorageAddPage));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MenuPage));
+        }
+
+        private void G_delete(object sender, RoutedEventArgs e)
+        {
+            string i;
+            i = d_input.Text;
+            delete(i);
+
+          this.Frame.Navigate(typeof(GoodsPage));
         }
     }
 }

@@ -230,3 +230,13 @@ C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_Syste
 C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\GoodsPage.xbf
 C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\GoodsPage.xbf
 C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\StorageAddPage.xbf
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\OrderPage.xbf
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\Up_Login_Page.xbf
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\OrderPage.g.i.cs
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\OrderPage.g.cs
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\Up_Login_Page.g.i.cs
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\Up_Login_Page.g.cs
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\OrderPage.xaml
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\Up_Login_Page.xaml
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\OrderPage.xbf
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\Up_Login_Page.xbf

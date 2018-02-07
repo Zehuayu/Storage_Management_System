@@ -17,32 +17,14 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Storage_Management_System
 {
-    
-    public sealed partial class MenuPage : Page
+    /// <summary>
+    /// 可用于自身或导航至 Frame 内部的空白页。
+    /// </summary>
+    public sealed partial class OrderPage : Page
     {
-        public MenuPage()
+        public OrderPage()
         {
             this.InitializeComponent();
-        }
-
-        private void menu_goods(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(GoodsPage));
-        }
-
-        private void menu_order(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void menu_update(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Up_Login_Page));
-        }
-
-        private void menu_out(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

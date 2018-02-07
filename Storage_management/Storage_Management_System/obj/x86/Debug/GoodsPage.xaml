@@ -10,16 +10,18 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Button x:ConnectionId='2' Content="Add"     Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"   HorizontalAlignment="Left" FontSize="25"               Height="45" Margin="21,17,0,0" Width="82" />
+        <Button x:ConnectionId='2' Content="Add"     Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"   HorizontalAlignment="Left" FontSize="15"               Height="30" Margin="6,7,0,0" Width="52" />
 
-        <Button x:ConnectionId='3' Content="Delete"     Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"   HorizontalAlignment="Left" FontSize="25"                  Height="45" Margin="141,16,0,0" />
+        <Button x:ConnectionId='3' Content="Delete"     Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"   HorizontalAlignment="Left" FontSize="15"                  Height="31" Margin="70,7,0,0" Width="64" />
 
+        <Button x:ConnectionId='4' Content="Back" HorizontalAlignment="Left" FontSize="15" Foreground="White" Canvas.Left="100" Canvas.ZIndex="100" Margin="6,40,0,611" Width="52" Height="29"                     />
         <TextBlock Text="G-Name" HorizontalAlignment="Left" Margin="43,70,0,593" FontSize="10"  Width="43" FontWeight="Bold"/>
         <TextBlock Text="G-Amount" HorizontalAlignment="Left" Margin="108,70,0,593" FontSize="10"  Width="52" FontWeight="Bold"/>
         <TextBlock Text="G-Price" HorizontalAlignment="Left" Margin="181,70,0,593" FontSize="10"  Width="43" FontWeight="Bold" RenderTransformOrigin="0.535,0.451"/>
         <TextBlock Text="G-Supplier" HorizontalAlignment="Left" Margin="245,70,0,593" FontSize="10"  Width="53" FontWeight="Bold"/>
-        
-        <ListView x:ConnectionId='4' x:Name="MylistView"  BorderThickness="1"                                    Margin="18,96,90,233">
+
+        <TextBox x:ConnectionId='5' Name ="d_input" Text="" BorderThickness="1"  HorizontalAlignment="Left"  Margin="141,6,0,642" Width="68"/>
+        <ListView x:ConnectionId='6' x:Name="MylistView"  BorderThickness="1"                                    Margin="18,96,90,233">
             <ListView.ItemTemplate>
                 <DataTemplate                              >
 
@@ -28,7 +30,7 @@
                         <TextBlock Text="{Binding Amount}" Width="70" TextAlignment="Center" ></TextBlock>
                         <TextBlock Text="{Binding Price}" Width="70" TextAlignment="Center" ></TextBlock>
                         <TextBlock Text="{Binding Supplier}" Width="70" TextAlignment="Center" ></TextBlock>
-                        
+
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

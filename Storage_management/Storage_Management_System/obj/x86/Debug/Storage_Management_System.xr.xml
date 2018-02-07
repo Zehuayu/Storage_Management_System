@@ -47,6 +47,15 @@
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Height" />
+      <RootProperty Name="TextLineBounds" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="BorderThickness" />
@@ -74,17 +83,13 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="Storage_Management_System.MainPage" />
     <RootType FullName="Storage_Management_System.MenuPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Name" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
-    </RootType>
+    <RootType FullName="Storage_Management_System.OrderPage" />
     <RootType FullName="Storage_Management_System.StorageAddPage" />
+    <RootType FullName="Storage_Management_System.Up_Login_Page" />
   </Roots.RootTypes>
 </Roots>

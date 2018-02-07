@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Storage_Management_System.Up_Login_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Storage_Management_System"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+        <TextBlock Text="type you new password" FontWeight="Bold" FontSize="15" TextLineBounds="Full" Margin="13,98,177,502"/>
+        <TextBlock Text="maek sure new password" FontWeight="Bold" FontSize="15" TextLineBounds="Full" Margin="8,171,173,437"/>
+
+
+        <PasswordBox x:ConnectionId='1' Name ="lo_password" Password="" BorderThickness="1"  HorizontalAlignment="Left"  Margin="192,97,0,511" Width="152"/>
+        <PasswordBox x:ConnectionId='2' Name ="lo_sure_password" Password="" BorderThickness="1"  HorizontalAlignment="Left"  Margin="192,161,0,447" Width="151"/>
+
+        <Button x:ConnectionId='3' Content="Ok"               Margin="49,342,0,244" FontSize="20" Height="54" Width="103"/>
+        <Button x:ConnectionId='4' Content="Back"                 Margin="49,239,0,332" FontSize="20" Height="69" Width="103"/>
+        <PasswordBox x:ConnectionId='5' x:Name ="lo_password_old" Password="" BorderThickness="1"  HorizontalAlignment="Left"  Margin="190,35,0,573" Width="151"/>
+        <TextBlock Text="type you old password" FontWeight="Bold" FontSize="15" TextLineBounds="Full" Margin="11,43,179,563"/>
+
+    </Grid>
+</Page>
+

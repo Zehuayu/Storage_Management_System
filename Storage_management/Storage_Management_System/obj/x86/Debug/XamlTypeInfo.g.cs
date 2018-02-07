@@ -132,7 +132,7 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
+            _typeNameTable = new string[14];
             _typeNameTable[0] = "Storage_Management_System.GoodsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -144,9 +144,11 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
             _typeNameTable[8] = "String";
             _typeNameTable[9] = "Storage_Management_System.MainPage";
             _typeNameTable[10] = "Storage_Management_System.MenuPage";
-            _typeNameTable[11] = "Storage_Management_System.StorageAddPage";
+            _typeNameTable[11] = "Storage_Management_System.OrderPage";
+            _typeNameTable[12] = "Storage_Management_System.StorageAddPage";
+            _typeNameTable[13] = "Storage_Management_System.Up_Login_Page";
 
-            _typeTable = new global::System.Type[12];
+            _typeTable = new global::System.Type[14];
             _typeTable[0] = typeof(global::Storage_Management_System.GoodsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -158,7 +160,9 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
             _typeTable[8] = typeof(global::System.String);
             _typeTable[9] = typeof(global::Storage_Management_System.MainPage);
             _typeTable[10] = typeof(global::Storage_Management_System.MenuPage);
-            _typeTable[11] = typeof(global::Storage_Management_System.StorageAddPage);
+            _typeTable[11] = typeof(global::Storage_Management_System.OrderPage);
+            _typeTable[12] = typeof(global::Storage_Management_System.StorageAddPage);
+            _typeTable[13] = typeof(global::Storage_Management_System.Up_Login_Page);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -198,7 +202,9 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
         private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Storage_Management_System.GoodsPage.Recording>(); }
         private object Activate_9_MainPage() { return new global::Storage_Management_System.MainPage(); }
         private object Activate_10_MenuPage() { return new global::Storage_Management_System.MenuPage(); }
-        private object Activate_11_StorageAddPage() { return new global::Storage_Management_System.StorageAddPage(); }
+        private object Activate_11_OrderPage() { return new global::Storage_Management_System.OrderPage(); }
+        private object Activate_12_StorageAddPage() { return new global::Storage_Management_System.StorageAddPage(); }
+        private object Activate_13_Up_Login_Page() { return new global::Storage_Management_System.Up_Login_Page(); }
         private void VectorAdd_3_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Storage_Management_System.GoodsPage.Recording>)instance;
@@ -289,9 +295,23 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  Storage_Management_System.StorageAddPage
+            case 11:   //  Storage_Management_System.OrderPage
                 userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_StorageAddPage;
+                userType.Activator = Activate_11_OrderPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Storage_Management_System.StorageAddPage
+                userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_StorageAddPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Storage_Management_System.Up_Login_Page
+                userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_Up_Login_Page;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
