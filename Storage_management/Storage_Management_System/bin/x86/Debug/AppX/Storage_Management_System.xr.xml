@@ -5,6 +5,9 @@
     <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="Amount" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="phonenumber" />
+    <RootPropertyPathName Name="address" />
+    <RootPropertyPathName Name="OrderGoods" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -28,6 +31,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
@@ -62,6 +67,7 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -74,7 +80,9 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+    </RootType>
     <RootType FullName="Storage_Management_System.GoodsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Password" />
@@ -88,6 +96,9 @@
     </RootType>
     <RootType FullName="Storage_Management_System.MainPage" />
     <RootType FullName="Storage_Management_System.MenuPage" />
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleY" />
+    </RootType>
     <RootType FullName="Storage_Management_System.OrderPage" />
     <RootType FullName="Storage_Management_System.StorageAddPage" />
     <RootType FullName="Storage_Management_System.Up_Login_Page" />

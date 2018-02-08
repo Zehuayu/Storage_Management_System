@@ -32,7 +32,7 @@ namespace Storage_Management_System
 
         private void menu_order(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(OrderPage));
         }
 
         private void menu_update(object sender, RoutedEventArgs e)

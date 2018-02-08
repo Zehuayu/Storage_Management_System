@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
+      "Microsoft.Azure.Mobile.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -323,6 +337,15 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.native.System.IO.Compression/4.1.0": {
@@ -2229,6 +2252,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
+      "Microsoft.Azure.Mobile.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -2499,6 +2536,15 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -4546,6 +4592,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
+      "Microsoft.Azure.Mobile.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4817,6 +4877,15 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -6899,6 +6968,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
+      "Microsoft.Azure.Mobile.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -7172,6 +7255,15 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -9225,6 +9317,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
+      "Microsoft.Azure.Mobile.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -9499,6 +9605,15 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -11587,6 +11702,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
+      "Microsoft.Azure.Mobile.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -11860,6 +11989,15 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -13913,6 +14051,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
+      "Microsoft.Azure.Mobile.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -14187,6 +14339,15 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -16276,6 +16437,28 @@
     }
   },
   "libraries": {
+    "Microsoft.Azure.Mobile.Client/4.0.2": {
+      "sha512": "FFHBqESmv/wKOz6rJh1cCT+jByny56nQ3u1LA8TEc21L1DxYga/CR7b/yx7100+4EQXTdkzLc0E5ScLcYNKhTQ==",
+      "type": "package",
+      "path": "microsoft.azure.mobile.client/4.0.2",
+      "files": [
+        "lib/monoandroid70/Microsoft.Azure.Mobile.Client.dll",
+        "lib/monoandroid70/Microsoft.Azure.Mobile.Client.xml",
+        "lib/net45/Microsoft.Azure.Mobile.Client.dll",
+        "lib/net45/Microsoft.Azure.Mobile.Client.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Mobile.Client.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Mobile.Client.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Azure.Mobile.Client.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Azure.Mobile.Client.xml",
+        "lib/uap10.0/Microsoft.Azure.Mobile.Client.dll",
+        "lib/uap10.0/Microsoft.Azure.Mobile.Client.pri",
+        "lib/uap10.0/Microsoft.Azure.Mobile.Client.xml",
+        "lib/xamarinios10/Microsoft.Azure.Mobile.Client.dll",
+        "lib/xamarinios10/Microsoft.Azure.Mobile.Client.xml",
+        "microsoft.azure.mobile.client.4.0.2.nupkg.sha512",
+        "microsoft.azure.mobile.client.nuspec"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -18944,6 +19127,30 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
       ]
     },
     "runtime.any.System.Collections/4.0.11": {
@@ -25741,6 +25948,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.10586": [
+      "Microsoft.Azure.Mobile.Client >= 4.0.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.6",
       "SQLite.Net-PCL >= 3.1.1"
     ]
@@ -25752,11 +25960,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yuzehua\\source\\repos\\Storage_Management_System\\Storage_Management_System\\Storage_Management_System.csproj",
+      "projectUniqueName": "C:\\Users\\yuzehua\\source\\repos\\Storage_Management_System\\Storage_management\\Storage_Management_System\\Storage_Management_System.csproj",
       "projectName": "Storage_Management_System",
-      "projectPath": "C:\\Users\\yuzehua\\source\\repos\\Storage_Management_System\\Storage_Management_System\\Storage_Management_System.csproj",
+      "projectPath": "C:\\Users\\yuzehua\\source\\repos\\Storage_Management_System\\Storage_management\\Storage_Management_System\\Storage_Management_System.csproj",
       "packagesPath": "C:\\Users\\yuzehua\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yuzehua\\source\\repos\\Storage_Management_System\\Storage_Management_System\\obj\\",
+      "outputPath": "C:\\Users\\yuzehua\\source\\repos\\Storage_Management_System\\Storage_management\\Storage_Management_System\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -25783,6 +25991,10 @@
     "frameworks": {
       "uap10.0.10586": {
         "dependencies": {
+          "Microsoft.Azure.Mobile.Client": {
+            "target": "Package",
+            "version": "[4.0.2, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.0.6, )"

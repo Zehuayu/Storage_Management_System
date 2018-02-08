@@ -12,19 +12,74 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices.Sync;
+using Storage_Management_System.Database;
 
-// https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
+
 
 namespace Storage_Management_System
 {
-    /// <summary>
-    /// 可用于自身或导航至 Frame 内部的空白页。
-    /// </summary>
+    
     public sealed partial class OrderPage : Page
     {
+
+
+
+        private MobileServiceCollection<OrderInfo, OrderInfo> items;
+
+
+
         public OrderPage()
         {
             this.InitializeComponent();
+        }
+
+
+        private async void Add_Button(object sender, RoutedEventArgs e)
+        {
+
+            OrderInfo item = new OrderInfo
+            {
+
+                OrderGoods = "Fire Rice",
+
+                address = "Dublin Road",
+
+                phonenumber = 087475255
+               
+            };
+
+            await App.MobileService.GetTable<OrderInfo>().InsertAsync(item);
+
+
+        }
+
+        private async void show_table(object sender, RoutedEventArgs e)
+        {
+            MobileServiceInvalidOperationException exep = null;
+
+
+            try
+            {
+
+                items = await App.MobileService.GetTable<OrderInfo>().ToCollectionAsync();
+
+
+            }
+            catch (MobileServiceInvalidOperationException ex)
+            {
+                exep = ex;
+            }
+
+
+
+            if (exep == null) MylistView.DataContext = items;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MenuPage));
         }
     }
 }

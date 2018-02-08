@@ -9,7 +9,29 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Button Content="Refresh" Margin="24,25,0,711"/>
+        <Button x:ConnectionId='1' Content="Refresh" Height="60" Width="84"                     Margin="25,24,0,556" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </Button.RenderTransform>
+        </Button>
+
+        <ListView x:ConnectionId='2' x:Name="MylistView" Margin="42,126,59,114" Height="400"  BorderThickness="1" ItemsSource="{Binding}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" BorderThickness="1">
+                        <TextBlock Text="{Binding Path=OrderGoods}" Margin="20" TextAlignment="Center" Width="80"></TextBlock>
+                        <TextBlock Text="{Binding Path=address}" Margin="20" TextAlignment="Center" Width="80"></TextBlock>
+                        <TextBlock Text="{Binding Path=phonenumber}" Margin="20" TextAlignment="Center" Width="80"></TextBlock>
+
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:ConnectionId='3' Content="add" Height="60" Width="84"                     Margin="157,24,0,556" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </Page>
 

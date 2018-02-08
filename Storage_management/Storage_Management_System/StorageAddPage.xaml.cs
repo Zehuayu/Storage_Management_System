@@ -54,6 +54,7 @@ namespace Storage_Management_System
                 var count = conn.Insert(addInfo);
             }
 
+            this.Frame.Navigate(typeof(StorageAddPage));
             
         }
     }

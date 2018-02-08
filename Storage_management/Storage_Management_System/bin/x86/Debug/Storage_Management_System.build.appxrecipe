@@ -10,23 +10,26 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>df746889-756d-4a3f-94e7-3bb1d3d24fda</PackageIdentityName>
     <PackageIdentityPublisher>CN=yuzehua</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\Storage_Management_System.exe">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Storage_Management_System.exe">
       <PackagePath>entrypoint\Storage_Management_System.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
+      <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -69,6 +72,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\.nuget\packages\microsoft.visualbasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\.nuget\packages\newtonsoft.json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\.nuget\packages\runtime.any.system.collections\4.0.11\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
@@ -379,47 +385,47 @@
     <AppxPackagedFile Include="C:\Program Files\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.21.0\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\Storage_Management_System.xr.xml">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Storage_Management_System.xr.xml">
       <PackagePath>Storage_Management_System.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_Management_System\bin\x86\Debug\Core\Storage_Management_System.exe">
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Core\Storage_Management_System.exe">
       <PackagePath>Storage_Management_System.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
