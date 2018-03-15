@@ -30,9 +30,6 @@ namespace Storage_Client
             BindingContext = this.viewModel = viewModel;
         }
 
-        async void Order_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new NewItemPage());
-        }
+       
     }
 }

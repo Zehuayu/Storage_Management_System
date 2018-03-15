@@ -16,10 +16,10 @@ namespace Storage_Client
             {
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Egg Rice", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Checiken Wing", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Beef noodel", Description="This is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Beef Noodel", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Spring Roll", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Spicy Soup", Description="This is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Crisp Ribs", Description="This is an item description." },
             };
 
             foreach (var item in mockItems)

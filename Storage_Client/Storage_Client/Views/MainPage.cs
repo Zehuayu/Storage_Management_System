@@ -15,7 +15,7 @@ namespace Storage_Client
                 case Device.iOS:
                     itemsPage = new NavigationPage(new ItemsPage())
                     {
-                        Title = "Browse"
+                        Title = "Menu"
                     };
 
                    
@@ -25,7 +25,7 @@ namespace Storage_Client
                 default:
                     itemsPage = new ItemsPage()
                     {
-                        Title = "Browse"
+                        Title = "Menu"
                     };
 
                    
