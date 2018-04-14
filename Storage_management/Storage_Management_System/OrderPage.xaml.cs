@@ -15,47 +15,69 @@ using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
 using Microsoft.WindowsAzure.MobileServices.Sync;
 using Storage_Management_System.Database;
-
-
+using Windows.UI.Popups;
 
 namespace Storage_Management_System
 {
-    
+
     public sealed partial class OrderPage : Page
     {
 
 
 
         private MobileServiceCollection<OrderInfo, OrderInfo> items;
-
+        IMobileServiceTable<OrderInfo> toTable = App.client.GetTable<OrderInfo>();
+        
 
 
         public OrderPage()
         {
             this.InitializeComponent();
+            gettable();
         }
 
 
-        private async void Add_Button(object sender, RoutedEventArgs e)
+     
+
+        private void Show_table(object sender, RoutedEventArgs e)
         {
+            gettable();
+        }
 
-            OrderInfo item = new OrderInfo
-            {
 
-                OrderGoods = "Fire Rice",
-
-                address = "Dublin Road",
-
-                phonenumber = 087475255
-               
-            };
-
-            await App.MobileService.GetTable<OrderInfo>().InsertAsync(item);
-
+        private void Update_data(object sender, RoutedEventArgs e)
+        {
+            update();
+            gettable();
 
         }
 
-        private async void show_table(object sender, RoutedEventArgs e)
+      
+
+        private  void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            delete();
+            gettable();
+        }
+
+
+
+
+
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MenuPage));
+        }
+
+
+
+
+
+
+
+        async void gettable()
         {
             MobileServiceInvalidOperationException exep = null;
 
@@ -63,7 +85,7 @@ namespace Storage_Management_System
             try
             {
 
-                items = await App.MobileService.GetTable<OrderInfo>().ToCollectionAsync();
+                items = await toTable.ToCollectionAsync();
 
 
             }
@@ -75,11 +97,56 @@ namespace Storage_Management_System
 
 
             if (exep == null) MylistView.DataContext = items;
+
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        async void update()
         {
-            this.Frame.Navigate(typeof(MenuPage));
+            MobileServiceInvalidOperationException exep = null;
+            string info = intype.Text;
+
+
+            OrderInfo iteme = new OrderInfo
+            {
+                Id = info,
+                OrderGoods = "order has finish",
+                address = "order has deliver",
+                status = true,
+
+            };
+            try
+            {
+                await toTable.UpdateAsync(iteme);
+                items = await toTable.ToCollectionAsync();
+
+            }
+            catch (MobileServiceInvalidOperationException ex)
+            {
+                exep = ex;
+            }
+        }
+
+        async void delete()
+        {
+           
+   
+               
+            string info = intype.Text;
+            OrderInfo dele = new OrderInfo
+            {
+
+                Id = info
+            };
+          //  if (info == or.Id)
+        //    {
+                await toTable.DeleteAsync(dele);
+                items = await toTable.ToCollectionAsync();
+        //    }
+       //     else
+        //    {
+        //        string msg = "$ ID is not correct ";
+          //      await new MessageDialog(msg).ShowAsync();
+         //   }
         }
     }
 }

@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/jshda.jpg"/>
+        </Grid.Background>
 
 
         <TextBlock Text="type you new password" FontWeight="Bold" FontSize="15" TextLineBounds="Full" Margin="13,98,177,502"/>

@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/asdasd.jpg"/>
+        </Grid.Background>
         <Button Content="Goods Information"  Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"   HorizontalAlignment="Stretch" FontSize="25" Click="menu_goods" Height="45" Margin="75,138,59,0" />
 
         <Button Content="Order Information"  Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"   HorizontalAlignment="Stretch" FontSize="25" Click="menu_order" Height="45" Margin="75,211,59,0" />

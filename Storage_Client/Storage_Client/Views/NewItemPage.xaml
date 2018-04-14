@@ -5,7 +5,7 @@
 
 
     <ContentPage.ToolbarItems>
-		<ToolbarItem Text="Save" Clicked="Save_Clicked" />
+		<ToolbarItem Text="Order" Clicked="Save_Clicked" />
 	</ContentPage.ToolbarItems>
 	<ContentPage.Content>
 		<StackLayout Spacing="20" Padding="15">

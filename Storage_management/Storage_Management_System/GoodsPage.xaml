@@ -8,7 +8,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Height="680">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/050d97181ee6ff1bffff237576e38f1a.jpg"/>
+        </Grid.Background>
 
         <Button Content="Add"     Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"   HorizontalAlignment="Left" FontSize="15" Click="g_add" Height="30" Margin="6,7,0,0" Width="52" />
 

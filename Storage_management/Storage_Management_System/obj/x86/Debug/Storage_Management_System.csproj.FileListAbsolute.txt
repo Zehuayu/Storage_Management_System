@@ -729,3 +729,8 @@ C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Stora
 C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml
 C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Reference.xbf
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\Reference.g.i.cs
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\Reference.g.cs
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\Reference.xaml
+C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\obj\x86\Debug\Reference.xbf

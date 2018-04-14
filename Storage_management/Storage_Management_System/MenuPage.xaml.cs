@@ -13,13 +13,14 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
+
 
 namespace Storage_Management_System
 {
     
     public sealed partial class MenuPage : Page
     {
+        // menu page let customer enter the functionality page
         public MenuPage()
         {
             this.InitializeComponent();

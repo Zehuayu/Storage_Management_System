@@ -6,8 +6,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="Assets/050d97181ee6ff1bffff237576e38f1a.jpg" Stretch="UniformToFill"/>
+    </Page.Background>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/050d97181ee6ff1bffff237576e38f1a.jpg"/>
+        </Grid.Background>
 
         <TextBlock  HorizontalAlignment="Stretch" Margin="10,63,10,536" FontSize="21" Canvas.Left="100" Canvas.ZIndex="100" FontWeight="Bold" TextWrapping="Wrap" Text="Login your Storage App" TextAlignment="Center" Height="41"/>
         <TextBlock Text="Oringinal Passcode is 0000" HorizontalAlignment="Left"  Margin="10,141,155,474"/>
@@ -18,4 +24,5 @@
 
         <Button Content="Reference" Foreground="White"  VerticalAlignment="Top" Canvas.Left="100" Canvas.ZIndex="100"  HorizontalAlignment="Stretch" Margin="110,346,100,0" FontSize="25"  Width="150" Height="45" Click="m_re"/>
     </Grid>
+
 </Page>

@@ -385,6 +385,15 @@
     <AppxPackagedFile Include="C:\Program Files\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.21.0\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\050d97181ee6ff1bffff237576e38f1a.jpg">
+      <PackagePath>Assets\050d97181ee6ff1bffff237576e38f1a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\asdasd.jpg">
+      <PackagePath>Assets\asdasd.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\jshda.jpg">
+      <PackagePath>Assets\jshda.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>

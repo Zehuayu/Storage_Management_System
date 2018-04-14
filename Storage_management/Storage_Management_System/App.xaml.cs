@@ -26,7 +26,7 @@ namespace Storage_Management_System
 
 
 
-        public static MobileServiceClient MobileService = new MobileServiceClient("https://ordertable.azurewebsites.net");
+        public static MobileServiceClient client = new MobileServiceClient("https://ordertable.azurewebsites.net");
 
 
         public App()

@@ -14,12 +14,18 @@ namespace Storage_Client
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Egg Rice", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Checiken Wing", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Beef Noodel", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Spring Roll", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Spicy Soup", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Crisp Ribs", Description="This is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Pan-Fried Dumplings", Description="A Delicious traditional crispy dumplin" +
+                        " stuffed with pork or minced beef and vegetables Allergens: Gluten, Eggs, Soybeans, Celery & Sesame seeds."  + "\r\n" + "\r\n" + "\r\n" + " €5.00"},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Crispy Chilli Chicken", Description="Crispy shredded chicken seasoned with chilli salt and pepper." +
+                        "Allergen Gluten, Eggs, Peanuts & Nuts Gluten Free "  + "\r\n" + "\r\n" + "\r\n" + "€7.00"  },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Spice Bag", Description="Shredded Chicken and Chips seasoned with our special blend of salt and chilli sauce.Allergens:" +
+                        " Gluten, Eggs, Peanuts & Nuts  " + "\r\n" + "\r\n"  + "\r\n"+ " €7.00" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Veggie Mixed Salad", Description="A Fresh vegan salad mixed with greens topped with falafel and your choice of sauce." +
+                        "Allergens: Gluten, Peanuts & Nuts, soybeans, Celery, Sesame seeds." + "\r\n" + "\r\n"  + "\r\n"+ " €5.00" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Amber-Fire Szchuan Style", Description="A Delicious Asian dish stir fired with mixed vegetables, fresh garlic, cumin and spicy chilli" +
+                        "Allergens: Gluten, soybeans, Sesame seeds." + "\r\n" + "\r\n"  + "\r\n"+ " €10.00" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Burgers", Description="Our handmade crispy, warm flat bread buns are prepared with your choice of fillings." +
+                        "Allergens: Gluten, Soybeans, Celery & Sesame Seeds." + "\r\n" + "\r\n"  + "\r\n"+ " €5.00"},
             };
 
             foreach (var item in mockItems)

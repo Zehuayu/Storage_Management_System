@@ -67,14 +67,6 @@
 /Users/yuzehua/Projects/Storage_Client/iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/yuzehua/Projects/Storage_Client/iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/yuzehua/Projects/Storage_Client/iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.csprojResolveAssemblyReference.cache
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.csproj.CoreCompileInputs.cache
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.Views.ItemDetailPage.xaml.g.cs
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.Views.ItemsPage.xaml.g.cs
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.Views.NewItemPage.xaml.g.cs
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.App.xaml.g.cs
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.exe
-/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.pdb
 /Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
 /Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
 /Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
@@ -90,3 +82,10 @@
 /Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/optimized/xamarin_logo@2x.png
 /Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/optimized/xamarin_logo@3x.png
 /Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.csproj.CoreCompileInputs.cache
+/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.Views.ItemDetailPage.xaml.g.cs
+/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.Views.ItemsPage.xaml.g.cs
+/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.Views.NewItemPage.xaml.g.cs
+/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.App.xaml.g.cs
+/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.exe
+/Users/yuzehua/Projects/Storage_Client/iOS/obj/iPhoneSimulator/Debug/Storage_Client.iOS.pdb

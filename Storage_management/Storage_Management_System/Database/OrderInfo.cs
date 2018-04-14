@@ -24,10 +24,10 @@ namespace Storage_Management_System.Database
 
         public string address { get; set; }
 
-        public int phonenumber { get; set; }
+        public string phonenumber { get; set; }
 
-           
+        public bool status { get; set; }
 
-       
+        
     }
 }

@@ -69,7 +69,7 @@ namespace Storage_Management_System
 
         private void m_re(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Reference));
         }
 
     }

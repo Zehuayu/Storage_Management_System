@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-08T00:57:03.314</Modified>
+      <Modified>2018-04-13T21:37:20.352</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Storage_Management_System.exe">
       <PackagePath>entrypoint\Storage_Management_System.exe</PackagePath>
-      <Modified>2018-02-08T00:57:02.267</Modified>
+      <Modified>2018-04-13T21:37:18.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -515,6 +515,18 @@
       <PackagePath>sqlite3.dll</PackagePath>
       <Modified>2018-01-16T19:50:03.448</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\050d97181ee6ff1bffff237576e38f1a.jpg">
+      <PackagePath>Assets\050d97181ee6ff1bffff237576e38f1a.jpg</PackagePath>
+      <Modified>2018-04-13T21:24:18.944</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\asdasd.jpg">
+      <PackagePath>Assets\asdasd.jpg</PackagePath>
+      <Modified>2018-04-13T21:31:44.348</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Assets\jshda.jpg">
+      <PackagePath>Assets\jshda.jpg</PackagePath>
+      <Modified>2018-04-13T21:33:07.896</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-02-07T22:44:52.511</Modified>
@@ -555,7 +567,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Storage_Management_System.xr.xml">
       <PackagePath>Storage_Management_System.xr.xml</PackagePath>
-      <Modified>2018-02-08T00:46:19.395</Modified>
+      <Modified>2018-04-13T21:37:18.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -564,11 +576,11 @@
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-08T00:57:03.003</Modified>
+      <Modified>2018-04-13T21:37:19.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Core\Storage_Management_System.exe">
       <PackagePath>Storage_Management_System.exe</PackagePath>
-      <Modified>2018-02-08T00:57:03.304</Modified>
+      <Modified>2018-04-13T21:37:20.341</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
