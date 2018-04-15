@@ -24,6 +24,7 @@
         <TextBox x:ConnectionId='3' Name ="AmountInput" Text="" BorderThickness="1" HorizontalAlignment="Left" Margin="18,176,0,432" Width="120"/>
         <TextBox x:ConnectionId='4' Name="PriceInput" Text="" BorderThickness="1"   HorizontalAlignment="Left" Margin="18,221,0,387" Width="120"/>
         <TextBox x:ConnectionId='5' Name="SupplierInput" Text="" BorderThickness="1"  HorizontalAlignment="Left" Margin="18,271,0,337" Width="120"/>
+       
         <Button x:ConnectionId='6' Content="Back" Margin="204,370,0,214" FontSize="30" Height="56" Width="80"                     />
 
     </Grid>

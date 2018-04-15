@@ -20,11 +20,15 @@ namespace Storage_Management_System.Database
 
         public string Name { get; set; }
 
-        public string Amount { get; set; }
+        public int Amount { get; set; }
 
-        public string Price { get; set; }
+        public double Price { get; set; }
+
+        public double Outprice { get; set; }
 
         public string Supplier { get; set; }
+
+        public DateTime Time { get; set; }
 
     }
 }

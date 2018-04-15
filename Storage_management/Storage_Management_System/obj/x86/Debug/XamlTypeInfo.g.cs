@@ -132,7 +132,7 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[18];
             _typeNameTable[0] = "Storage_Management_System.GoodsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -142,14 +142,17 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
             _typeNameTable[6] = "Storage_Management_System.GoodsPage.Recording";
             _typeNameTable[7] = "Int32";
             _typeNameTable[8] = "String";
-            _typeNameTable[9] = "Storage_Management_System.MainPage";
-            _typeNameTable[10] = "Storage_Management_System.MenuPage";
-            _typeNameTable[11] = "Storage_Management_System.OrderPage";
-            _typeNameTable[12] = "Storage_Management_System.Reference";
-            _typeNameTable[13] = "Storage_Management_System.StorageAddPage";
-            _typeNameTable[14] = "Storage_Management_System.Up_Login_Page";
+            _typeNameTable[9] = "Double";
+            _typeNameTable[10] = "System.DateTime";
+            _typeNameTable[11] = "System.ValueType";
+            _typeNameTable[12] = "Storage_Management_System.MainPage";
+            _typeNameTable[13] = "Storage_Management_System.MenuPage";
+            _typeNameTable[14] = "Storage_Management_System.OrderPage";
+            _typeNameTable[15] = "Storage_Management_System.Reference";
+            _typeNameTable[16] = "Storage_Management_System.StorageAddPage";
+            _typeNameTable[17] = "Storage_Management_System.Up_Login_Page";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[18];
             _typeTable[0] = typeof(global::Storage_Management_System.GoodsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -159,12 +162,15 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
             _typeTable[6] = typeof(global::Storage_Management_System.GoodsPage.Recording);
             _typeTable[7] = typeof(global::System.Int32);
             _typeTable[8] = typeof(global::System.String);
-            _typeTable[9] = typeof(global::Storage_Management_System.MainPage);
-            _typeTable[10] = typeof(global::Storage_Management_System.MenuPage);
-            _typeTable[11] = typeof(global::Storage_Management_System.OrderPage);
-            _typeTable[12] = typeof(global::Storage_Management_System.Reference);
-            _typeTable[13] = typeof(global::Storage_Management_System.StorageAddPage);
-            _typeTable[14] = typeof(global::Storage_Management_System.Up_Login_Page);
+            _typeTable[9] = typeof(global::System.Double);
+            _typeTable[10] = typeof(global::System.DateTime);
+            _typeTable[11] = typeof(global::System.ValueType);
+            _typeTable[12] = typeof(global::Storage_Management_System.MainPage);
+            _typeTable[13] = typeof(global::Storage_Management_System.MenuPage);
+            _typeTable[14] = typeof(global::Storage_Management_System.OrderPage);
+            _typeTable[15] = typeof(global::Storage_Management_System.Reference);
+            _typeTable[16] = typeof(global::Storage_Management_System.StorageAddPage);
+            _typeTable[17] = typeof(global::Storage_Management_System.Up_Login_Page);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -202,12 +208,12 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
         private object Activate_0_GoodsPage() { return new global::Storage_Management_System.GoodsPage(); }
         private object Activate_3_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Storage_Management_System.GoodsPage.Recording>(); }
         private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Storage_Management_System.GoodsPage.Recording>(); }
-        private object Activate_9_MainPage() { return new global::Storage_Management_System.MainPage(); }
-        private object Activate_10_MenuPage() { return new global::Storage_Management_System.MenuPage(); }
-        private object Activate_11_OrderPage() { return new global::Storage_Management_System.OrderPage(); }
-        private object Activate_12_Reference() { return new global::Storage_Management_System.Reference(); }
-        private object Activate_13_StorageAddPage() { return new global::Storage_Management_System.StorageAddPage(); }
-        private object Activate_14_Up_Login_Page() { return new global::Storage_Management_System.Up_Login_Page(); }
+        private object Activate_12_MainPage() { return new global::Storage_Management_System.MainPage(); }
+        private object Activate_13_MenuPage() { return new global::Storage_Management_System.MenuPage(); }
+        private object Activate_14_OrderPage() { return new global::Storage_Management_System.OrderPage(); }
+        private object Activate_15_Reference() { return new global::Storage_Management_System.Reference(); }
+        private object Activate_16_StorageAddPage() { return new global::Storage_Management_System.StorageAddPage(); }
+        private object Activate_17_Up_Login_Page() { return new global::Storage_Management_System.Up_Login_Page(); }
         private void VectorAdd_3_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Storage_Management_System.GoodsPage.Recording>)instance;
@@ -271,7 +277,9 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Amount");
                 userType.AddMemberName("Price");
+                userType.AddMemberName("Outprice");
                 userType.AddMemberName("Supplier");
+                userType.AddMemberName("Time");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -284,44 +292,59 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
                 xamlType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Storage_Management_System.MainPage
+            case 9:   //  Double
+                xamlType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  System.DateTime
+                userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  System.ValueType
+                userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 12:   //  Storage_Management_System.MainPage
                 userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
+                userType.Activator = Activate_12_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Storage_Management_System.MenuPage
+            case 13:   //  Storage_Management_System.MenuPage
                 userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_MenuPage;
+                userType.Activator = Activate_13_MenuPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Storage_Management_System.OrderPage
+            case 14:   //  Storage_Management_System.OrderPage
                 userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_OrderPage;
+                userType.Activator = Activate_14_OrderPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Storage_Management_System.Reference
+            case 15:   //  Storage_Management_System.Reference
                 userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_Reference;
+                userType.Activator = Activate_15_Reference;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Storage_Management_System.StorageAddPage
+            case 16:   //  Storage_Management_System.StorageAddPage
                 userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_StorageAddPage;
+                userType.Activator = Activate_16_StorageAddPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Storage_Management_System.Up_Login_Page
+            case 17:   //  Storage_Management_System.Up_Login_Page
                 userType = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_Up_Login_Page;
+                userType.Activator = Activate_17_Up_Login_Page;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -363,7 +386,7 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
         private void set_3_Recording_Amount(object instance, object Value)
         {
             var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
-            that.Amount = (global::System.String)Value;
+            that.Amount = (global::System.Int32)Value;
         }
         private object get_4_Recording_Price(object instance)
         {
@@ -373,17 +396,37 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
         private void set_4_Recording_Price(object instance, object Value)
         {
             var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
-            that.Price = (global::System.String)Value;
+            that.Price = (global::System.Double)Value;
         }
-        private object get_5_Recording_Supplier(object instance)
+        private object get_5_Recording_Outprice(object instance)
+        {
+            var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
+            return that.Outprice;
+        }
+        private void set_5_Recording_Outprice(object instance, object Value)
+        {
+            var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
+            that.Outprice = (global::System.Double)Value;
+        }
+        private object get_6_Recording_Supplier(object instance)
         {
             var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
             return that.Supplier;
         }
-        private void set_5_Recording_Supplier(object instance, object Value)
+        private void set_6_Recording_Supplier(object instance, object Value)
         {
             var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
             that.Supplier = (global::System.String)Value;
+        }
+        private object get_7_Recording_Time(object instance)
+        {
+            var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
+            return that.Time;
+        }
+        private void set_7_Recording_Time(object instance, object Value)
+        {
+            var that = (global::Storage_Management_System.GoodsPage.Recording)instance;
+            that.Time = (global::System.DateTime)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -413,21 +456,33 @@ namespace Storage_Management_System.Storage_Management_System_XamlTypeInfo
                 break;
             case "Storage_Management_System.GoodsPage.Recording.Amount":
                 userType = (global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Storage_Management_System.GoodsPage.Recording");
-                xamlMember = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlMember(this, "Amount", "String");
+                xamlMember = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlMember(this, "Amount", "Int32");
                 xamlMember.Getter = get_3_Recording_Amount;
                 xamlMember.Setter = set_3_Recording_Amount;
                 break;
             case "Storage_Management_System.GoodsPage.Recording.Price":
                 userType = (global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Storage_Management_System.GoodsPage.Recording");
-                xamlMember = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlMember(this, "Price", "String");
+                xamlMember = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlMember(this, "Price", "Double");
                 xamlMember.Getter = get_4_Recording_Price;
                 xamlMember.Setter = set_4_Recording_Price;
+                break;
+            case "Storage_Management_System.GoodsPage.Recording.Outprice":
+                userType = (global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Storage_Management_System.GoodsPage.Recording");
+                xamlMember = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlMember(this, "Outprice", "Double");
+                xamlMember.Getter = get_5_Recording_Outprice;
+                xamlMember.Setter = set_5_Recording_Outprice;
                 break;
             case "Storage_Management_System.GoodsPage.Recording.Supplier":
                 userType = (global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Storage_Management_System.GoodsPage.Recording");
                 xamlMember = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlMember(this, "Supplier", "String");
-                xamlMember.Getter = get_5_Recording_Supplier;
-                xamlMember.Setter = set_5_Recording_Supplier;
+                xamlMember.Getter = get_6_Recording_Supplier;
+                xamlMember.Setter = set_6_Recording_Supplier;
+                break;
+            case "Storage_Management_System.GoodsPage.Recording.Time":
+                userType = (global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Storage_Management_System.GoodsPage.Recording");
+                xamlMember = new global::Storage_Management_System.Storage_Management_System_XamlTypeInfo.XamlMember(this, "Time", "System.DateTime");
+                xamlMember.Getter = get_7_Recording_Time;
+                xamlMember.Setter = set_7_Recording_Time;
                 break;
             }
             return xamlMember;

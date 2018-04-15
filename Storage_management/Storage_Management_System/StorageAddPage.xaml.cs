@@ -43,14 +43,16 @@ namespace Storage_Management_System
         private void SAP_Add(object sender, RoutedEventArgs e)
         {
             string name = NameInput.Text;
-            string amount = AmountInput.Text;
-            string price = PriceInput.Text;
+            int amount = Convert.ToInt32(AmountInput.Text);
+            double price = Convert.ToDouble(PriceInput.Text);
+            double outprice = price * 1.3 / amount;
             string supplier = SupplierInput.Text;
+            DateTime time = DateTime.Now;
 
 
             using (var conn = DatabaseConnection.GetDbConnectionone())
             {
-                var addInfo = new GoodsInfo() { Name = name, Amount = amount, Price = price, Supplier = supplier  };
+                var addInfo = new GoodsInfo() { Name = name, Amount = amount, Price = price / amount,Outprice = outprice ,Supplier = supplier, Time = time  };
                 var count = conn.Insert(addInfo);
             }
 

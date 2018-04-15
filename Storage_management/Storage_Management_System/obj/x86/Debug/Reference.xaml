@@ -12,8 +12,9 @@
             <ImageBrush ImageSource="Assets/jshda.jpg"/>
         </Grid.Background>
         <TextBlock Text="Storage Management System" TextWrapping="Wrap" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" Height="163" Margin="6,0,-95,0" VerticalAlignment="Top" Width="449"/>
-        <TextBlock Text="Supervisor: Kevin        Developer: Zehua Yu. Student Number: G00307279" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Height="55" Margin="8,192,-24,393" VerticalAlignment="Center" Width="376"  />
-        <TextBlock Text="The application only is modele, by changing the details this app can become various app owns too much functionality. I hope you can like it " TextWrapping="Wrap" Margin="13,449,-13,117"/>
+        <TextBlock Text="Supervisor: Kevin        Developer: Zehua Yu. Student Number: G00307279" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Height="55" Margin="8,192,-71,393" VerticalAlignment="Center" Width="423"  />
+        <TextBlock Text="The application only is modele, by changing the details this app can become various app owns too much functionality. I hope you can like it  Github URL:   https://github.com/Zehuayu/Storage_Management_System " TextWrapping="Wrap" Margin="17,366,7,149"/>
+        <Button x:ConnectionId='1' Content="Back Login-page" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="16,558,0,50"                     />
     </Grid>
 </Page>
 

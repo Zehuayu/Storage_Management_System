@@ -26,6 +26,8 @@ namespace Storage_Management_System.Database
 
         public string phonenumber { get; set; }
 
+        public string quantity { get; set; }
+
         public bool status { get; set; }
 
         

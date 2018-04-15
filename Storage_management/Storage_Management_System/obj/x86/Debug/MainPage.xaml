@@ -16,7 +16,7 @@
         </Grid.Background>
 
         <TextBlock  HorizontalAlignment="Stretch" Margin="10,63,10,536" FontSize="21" Canvas.Left="100" Canvas.ZIndex="100" FontWeight="Bold" TextWrapping="Wrap" Text="Login your Storage App" TextAlignment="Center" Height="41"/>
-        <TextBlock Text="Oringinal Passcode is 0000" HorizontalAlignment="Left"  Margin="10,141,155,474"/>
+        <TextBlock Text="Oringinal Passcode is 0000" HorizontalAlignment="Center"  Margin="20,141,14,474" Width="326"/>
 
         <PasswordBox x:ConnectionId='1' x:Name="passwordBox"  Password="" Margin="69,194,74,414" Canvas.Left="100" Canvas.ZIndex="100"  HorizontalAlignment="Stretch" RenderTransformOrigin="0.504,0.594" Height="30" Width="217"/>
 

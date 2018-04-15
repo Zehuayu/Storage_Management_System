@@ -24,6 +24,7 @@
         <TextBox Name ="AmountInput" Text="" BorderThickness="1" HorizontalAlignment="Left" Margin="18,176,0,432" Width="120"/>
         <TextBox Name="PriceInput" Text="" BorderThickness="1"   HorizontalAlignment="Left" Margin="18,221,0,387" Width="120"/>
         <TextBox Name="SupplierInput" Text="" BorderThickness="1"  HorizontalAlignment="Left" Margin="18,271,0,337" Width="120"/>
+       
         <Button Content="Back" Margin="204,370,0,214" FontSize="30" Height="56" Width="80" Click="Button_Click"/>
 
     </Grid>

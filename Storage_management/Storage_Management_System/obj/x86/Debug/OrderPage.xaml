@@ -12,6 +12,7 @@
             <ImageBrush ImageSource="Assets/jshda.jpg"/>
         </Grid.Background>
 
+       
         <Button x:ConnectionId='1' Content="Refresh" Height="38" Width="81"                     HorizontalAlignment="Left" Margin="10,11,0,591" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <CompositeTransform ScaleY="1"/>
@@ -19,14 +20,15 @@
         </Button>
         <Button x:ConnectionId='2' Content="Back" Margin="10,57,0,544" Width="80" HorizontalAlignment="Left" Height="39"                     />
 
-        <TextBox x:ConnectionId='3' Text="type" Name="intype" Height="30" Margin="122,18,132,590"/>
-        <ListView x:ConnectionId='4' x:Name="MylistView" Margin="42,126,59,114" Height="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="1" ItemsSource="{Binding}">
+        <TextBox x:ConnectionId='3' Text="type" Name="intype" Height="30" Margin="129,18,154,590"/>
+        <ListView x:ConnectionId='4' x:Name="MylistView" Margin="64,130,37,110" Height="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="1" ItemsSource="{Binding}">
             <ListView.Header>
                 <Grid Padding="12" BorderBrush="Black" BorderThickness="2" Background="{ThemeResource SystemControlBackgroundBaseMediumBrush}">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="130" />
+                        <ColumnDefinition Width="150" />
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="50"/>
                         <ColumnDefinition Width="300"/>
                         <ColumnDefinition Width="50"/>
 
@@ -34,8 +36,9 @@
                     <TextBlock Text="Order" TextAlignment="Center" Style="{ThemeResource CaptionTextBlockStyle}"/>
                     <TextBlock Grid.Column="1" Text="Address" TextAlignment="Center" Style="{ThemeResource CaptionTextBlockStyle}"/>
                     <TextBlock Grid.Column="2" Text="Phonenumber" TextAlignment="Center" Style="{ThemeResource CaptionTextBlockStyle}"/>
-                    <TextBlock Grid.Column="3" Text="ID" TextAlignment="Center" Style="{ThemeResource  CaptionTextBlockStyle}"/>
-                    <TextBlock Grid.Column="4" Text="Status" TextAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                    <TextBlock Grid.Column="3" Text="Quantity" TextAlignment="Center" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                    <TextBlock Grid.Column="4" Text="ID" TextAlignment="Center" Style="{ThemeResource  CaptionTextBlockStyle}"/>
+                    <TextBlock Grid.Column="5" Text="Status" TextAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}"/>
                 </Grid>
             </ListView.Header>
 
@@ -53,20 +56,21 @@
                             <TextBlock Grid.Column="1" Text="{Binding Path=phonenumber}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Width="150"></TextBlock>
                         </Border>
                         <Border Background="LightBlue" Grid.ColumnSpan="3" Height="40" BorderThickness="1" VerticalAlignment="Top">
+                            <TextBlock Grid.Column="1" Text="{Binding Path=quantity}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Width="50"></TextBlock>
+                        </Border>
+                        <Border Background="LightBlue" Grid.ColumnSpan="3" Height="40" BorderThickness="1" VerticalAlignment="Top">
                             <TextBlock Grid.Column="2" Text="{Binding Path=Id}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Width="320"></TextBlock>
                         </Border>
                         <Border Background="LightBlue" Grid.ColumnSpan="3" Height="40" BorderThickness="1" VerticalAlignment="Top">
                             <TextBlock Grid.Column="1" Text="{Binding Path=status}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Width="50"></TextBlock>
                         </Border>
-                        <StackPanel Orientation="Horizontal">
-                            <Button x:ConnectionId='6' Content="Receive"                     />
-                        </StackPanel>
+
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
         <Button x:ConnectionId='5' Content="Delete" Margin="115,58,0,543" Width="80" HorizontalAlignment="Left" Height="39"                     />
-
+        
     </Grid>
 </Page>
 

@@ -42,8 +42,10 @@ namespace Storage_Management_System
                         Name = iteam.Name,
                         Amount = iteam.Amount,
                         Price = iteam.Price,
-                        Supplier = iteam.Supplier
-
+                        Outprice = iteam.Outprice,
+                        Supplier = iteam.Supplier,
+                        Time = iteam.Time
+                        
 
                     });
                 }
@@ -57,11 +59,15 @@ namespace Storage_Management_System
 
             public string Name { get; set; }
 
-            public string Amount { get; set; }
+            public int Amount { get; set; }
 
-            public string Price { get; set; }
+            public double Price { get; set; }
+
+            public double Outprice { get; set; }
 
             public string Supplier { get; set; }
+
+            public DateTime Time { get; set; }
 
 
 

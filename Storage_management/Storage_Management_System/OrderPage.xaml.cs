@@ -37,46 +37,25 @@ namespace Storage_Management_System
         }
 
 
-     
-
         private void Show_table(object sender, RoutedEventArgs e)
         {
             gettable();
         }
-
-
         private void Update_data(object sender, RoutedEventArgs e)
         {
             update();
             gettable();
 
         }
-
-      
-
         private  void Delete_Click(object sender, RoutedEventArgs e)
         {
             delete();
             gettable();
         }
-
-
-
-
-
-
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MenuPage));
         }
-
-
-
-
-
-
-
         async void gettable()
         {
             MobileServiceInvalidOperationException exep = null;
@@ -137,16 +116,17 @@ namespace Storage_Management_System
 
                 Id = info
             };
-          //  if (info == or.Id)
-        //    {
+        
                 await toTable.DeleteAsync(dele);
                 items = await toTable.ToCollectionAsync();
-        //    }
-       //     else
-        //    {
-        //        string msg = "$ ID is not correct ";
-          //      await new MessageDialog(msg).ShowAsync();
-         //   }
+      
+        }
+
+       
+
+        private void ginput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

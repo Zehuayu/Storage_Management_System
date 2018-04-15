@@ -15,13 +15,11 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
+
 
 namespace Storage_Management_System
 {
-    /// <summary>
-    /// 可用于自身或导航至 Frame 内部的空白页。
-    /// </summary>
+  
     public sealed partial class Up_Login_Page : Page
     {
         public Up_Login_Page()
@@ -36,33 +34,45 @@ namespace Storage_Management_System
 
         private async void UP_OK(object sender, RoutedEventArgs e)
         {
-            using (var conn = DatabaseConnection.GetDbConnection())
+            if (lo_password.Password == "" || lo_sure_password.Password == "")
             {
-                var psd = conn.Table<LoginData>().Where(v => v.Id.Equals(1));
-                foreach (var item in psd)
-                {
+                string msg = $"the block can not be null!";
+                await new MessageDialog(msg).ShowAsync();
+            }
+            else {
 
-                    if (lo_password_old.Password == item.Password)
+
+
+
+                using (var conn = DatabaseConnection.GetDbConnection())
+
+                {
+                var psd = conn.Table<LoginData>().Where(v => v.Id.Equals(1));
+
+                    foreach (var item in psd)
                     {
-                        if (lo_password.Password == lo_sure_password.Password)
+
+                        if (lo_password_old.Password == item.Password)
                         {
-                            conn.Execute("UPDATE Psd = ? FROM LoginData  Where Id = ?", lo_sure_password.Password, 1);
-                            this.Frame.Navigate(typeof(MenuPage));
+                            if (lo_password.Password == lo_sure_password.Password)
+                            {
+                                conn.Execute("UPDATE LoginData SET Password = ? Where Id = ?", lo_sure_password.Password, 1);
+                                this.Frame.Navigate(typeof(MenuPage));
+                            }
+                            else
+                            {
+                                string msg = "$ type the same new password please! ";
+                                await new MessageDialog(msg).ShowAsync();
+                            }
+
                         }
                         else
                         {
-                            string msg = "$ type the same new password please! ";
+                            string msg = "$ please type correct password! ";
                             await new MessageDialog(msg).ShowAsync();
                         }
-                        
-                    }
-                    else
-                    {
-                        string msg = "$ please type correct password! ";
-                        await new MessageDialog(msg).ShowAsync();
-                    }
 
-
+                    }
                 }
 
             }
