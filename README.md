@@ -95,6 +95,8 @@ on the another hand, the page using the Bind functionality to show the data on t
             }
 
         }
+      
+![](https://github.com/Zehuayu/Storage_Management_System/blob/master/Images/2.png)
         
 OrderPage class: this page is that receive the client data with some modifing functionality. By Bingding functionality, the cloud databases to show on the local page.
 
@@ -168,7 +170,7 @@ Azure Connecting code:
       
         }
 
-
+![](https://github.com/Zehuayu/Storage_Management_System/blob/master/Images/5.png)
 ## Mobile App review
 
 ItemDetailPage class: this is a page for the introduction of goods, the customer can look at details of goods.
@@ -189,6 +191,7 @@ ItemDetailPage class: this is a page for the introduction of goods, the customer
         }
 
 ItemPage class: this class shows all of menu.
+![](https://github.com/Zehuayu/Storage_Management_System/blob/master/Images/11.png)
 
 NewItemPage class: this class is order page, the user can use the functionality of page to post the order to azure service.
 
@@ -253,7 +256,7 @@ NewItemPage class: this class is order page, the user can use the functionality 
             // await Navigation.PopToRootAsync();
         }
 
-
+![](https://github.com/Zehuayu/Storage_Management_System/blob/master/Images/12.png)
 ## Conclusion
 
 This app contain two app, the main process is UWP app including the some management functionality. The mobile app contains the post and some sample functionality.
