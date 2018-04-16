@@ -53,7 +53,10 @@ firstly, get the password data from SQLite databases
                 }
 
             }
-            ![](https://github.com/Zehuayu/Storage_Management_System/blob/master/Images/1.png)
+     
+     
+     
+![](https://github.com/Zehuayu/Storage_Management_System/blob/master/Images/1.png)
             
 Menupage class: this page only give the 4 button to enter different page for user.
 
