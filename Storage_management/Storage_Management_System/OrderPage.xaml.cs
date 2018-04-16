@@ -124,9 +124,5 @@ namespace Storage_Management_System
 
        
 
-        private void ginput_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

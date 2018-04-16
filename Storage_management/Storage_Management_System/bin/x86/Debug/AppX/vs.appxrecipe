@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-15T00:44:15.653</Modified>
+      <Modified>2018-04-16T13:42:12.093</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Storage_Management_System.exe">
       <PackagePath>entrypoint\Storage_Management_System.exe</PackagePath>
-      <Modified>2018-04-15T00:44:14.007</Modified>
+      <Modified>2018-04-16T13:42:04.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -576,11 +576,11 @@
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-15T00:44:15.084</Modified>
+      <Modified>2018-04-16T13:42:09.779</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yuzehua\source\repos\Storage_Management_System\Storage_management\Storage_Management_System\bin\x86\Debug\Core\Storage_Management_System.exe">
       <PackagePath>Storage_Management_System.exe</PackagePath>
-      <Modified>2018-04-15T00:44:15.633</Modified>
+      <Modified>2018-04-16T13:42:12.061</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -8,9 +8,11 @@
 		<ToolbarItem Text="Order" Clicked="Save_Clicked" />
 	</ContentPage.ToolbarItems>
 	<ContentPage.Content>
-		<StackLayout Spacing="20" Padding="15">
+		<StackLayout Spacing="10" Padding="15">
 			<Label Text="Order" FontSize="Medium" />
 			<Entry  x:Name="ordergoodsinput" Placeholder="ordergoods" FontSize="Small"  />
+            <Label Text="Quantity" FontSize="Medium" />
+            <Entry  x:Name="quantityinput" Placeholder="quantity" FontSize="Small"  />
 			<Label Text="Your Address" FontSize="Medium" />
 			<Entry  x:Name="addressinput" Placeholder="address" FontSize="Small" Margin="0" />
             <Label Text="Your PhoneNumber" FontSize="Medium" />

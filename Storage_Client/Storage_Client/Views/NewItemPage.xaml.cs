@@ -38,6 +38,8 @@ namespace Storage_Client
 
             string text3 = phonenumberinput.Text;
 
+            string quan = quantityinput.Text;
+
             bool text4 = false;
            
 
@@ -51,7 +53,9 @@ namespace Storage_Client
               
                 phonenumber = text3,
 
-                    status = text4
+                quantity = quan,
+
+                 status = text4
             };
             await MobileService.GetTable<OrderInfo>().InsertAsync(item);
 

@@ -70,7 +70,8 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button x:ConnectionId='5' Content="Delete" Margin="115,58,0,543" Width="80" HorizontalAlignment="Left" Height="39"                     />
-        
+        <Button x:ConnectionId='6' Content="Receive" Margin="235,58,0,543" Width="80" HorizontalAlignment="Left" Height="39"                    />
+
     </Grid>
 </Page>
 
